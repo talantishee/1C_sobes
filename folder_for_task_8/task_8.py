@@ -27,6 +27,7 @@ for i in text.read():
     len_of_file+=1
     if i in dictt.keys():
         dictt[i] += 1
+text.close()
 
 sorted_dict = dict(sorted(dictt.items(), key=lambda item: item[1], reverse=True))
 
